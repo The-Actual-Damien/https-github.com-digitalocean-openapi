@@ -3,6 +3,6 @@ name: ssh_key_identifier
 required: true
 description: Either the id or the fingerprint of an existing ssh key.
 schema:
-  oneOf:
+  anyOf:
     - $ref: '../attributes/ssh_key_id.yml'
     - $ref: '../attributes/ssh_key_fingerprint.yml'
